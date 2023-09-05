@@ -30,13 +30,14 @@ function a_scriptScope(){
     var a_local_var_2
     let a_block_let
     const a_block_const = 3
-  }
-  let a_scriptScope2= function(){
+
+    function a_scriptScope2(){
+      let a_local_let_2
+      const a_local_const_2 = 4
+    }
+    a_scriptScope2 = 1
     console.log(a_scriptScope2);
-    let a_local_let_2
-    const a_local_const_2 = 4
   }
-  a_scriptScope2()
 }
 
 a_scriptScope()
