@@ -15,7 +15,7 @@ let const 在{}中(不包含function(){})声明的变量 作用域为 block
 
 
 相关：
-左右查询 leftQueryRightQuery.js
+左右查询 LHS_RHS.js
 */
 
 var a_global_var 
