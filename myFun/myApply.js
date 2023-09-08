@@ -6,6 +6,7 @@ myCall.js
 
 
 Function.prototype.myApply = function(el,args){
+  if(typeof this !== 'function') throw Error(this+' is not a function')
   let obj = [null,undefined].includes(el) ? globalThis : typeof el !== 'object' ? Object(el) : el
   let temp = Symbol('temp')
   Object.defineProperty(obj,temp,{
